@@ -1,0 +1,76 @@
+<% include ../header.ejs %>
+<section class="container">
+    <div class="row">
+        <!-- 左模块 开始-->
+        <div class="col-md-8 block-l">
+            <div class="col-art-con">
+                <h2>一部超低成本的影片如何制作完成且走向世界</h2>
+                <ul class="list-unstyled art-ele clearfix">
+                    <li><span class="label-name">发布时间：</span>今天8:33</li>
+                    <li><span class="label-name">点击：</span>222</li>
+                </ul>
+                <div class="clearfix">
+                    <p>一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界</p>
+                    <p>一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界</p>
+                    <p>一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界一部超低成本的影片如何制作完成且走向世界</p>
+                </div>
+                <footer class="row">
+                    <div class="col-md-6 label-text"><span class="label-name">标签：</span><a href="">盲人</a><a href="">曹军</a><a href="">实现梦想</a></div>
+                    <div class="col-md-6 text-right u-action">
+                        <a class="btn btn-warning" href="">喜欢 456</a>
+                        <a class="btn btn-warning" href="">收藏</a>
+                        <a class="btn btn-warning" href="">分享到</a>
+                    </div>
+                </footer>
+                <ul class="list-unstyled art-pre">
+                    <li><span class="label-name">上一篇：</span><a href="">一部超低成本的影片如何制作完成且走向世界</a></li>
+                    <li><span class="label-name">下一篇：</span><a href="">一部超低成本的影片如何制作完成且走向世界</a></li>
+                </ul>
+            </div>
+
+            <!-- 评论 开始 -->
+            <div class="comment-wrap">
+                <h3 class="mod-sub-title">评论（5）</h3>
+                <% include ../widget/comment_widget.ejs %>
+            </div>
+            <!-- 评论 结束 -->
+        </div>
+        <!-- 左模块 结束-->
+
+        <!-- 右模块 开始-->
+        <aside class="col-md-4 block-r">
+            <!-- 专栏作者 开始 -->
+            <div class="u-info-wrap">
+                <h3 class="mod-sub-title">文章作者</h3>
+                <% include ../widget/author-sidebar_widget.ejs %>
+            </div>
+            <!-- 专栏作者 开始 -->
+
+            <!-- 相关专栏 开始 -->
+            <div class="u-info-wrap">
+                <h3 class="mod-sub-title">所属专栏</h3>
+                <div class="block-map-item">
+                    <div class="per-box clearfix">
+                        <div class="per-ava"><a href="" target="_blank"><img class="img-responsive" src="/images/demo/avatar<%=i%>.jpg" alt=""/></a></div>
+                        <div class="per-info">
+                            <h5><a href="" target="_blank">专栏名称</a></h5>
+                            <p><span class="label-name">作者：</span><a href="" target="_blank">乌龟</a></p>
+                            <p class="att-info"><span>123人关注</span><a class="btn-link" href="">+加关注</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.block-map-item -->
+            </div>
+            <!-- 相关专栏 结束 -->
+
+            <!-- 热门文章 开始 -->
+            <div class="art-list-wrap">
+                <h3 class="mod-sub-title">最新文章</h3>
+                <% include ../widget/article-sidebar_widget.ejs %>
+            </div>
+            <!-- 热门文章 开始 -->
+        </aside>
+        <!-- 右模块 结束-->
+    </div>
+</section>
+<% include ../footer.ejs %>

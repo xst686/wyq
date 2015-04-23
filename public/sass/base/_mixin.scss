@@ -1,0 +1,12 @@
+@charset "UTF-8";
+// 截取文本text-overflow
+@mixin singleline-ellipsis($substract:0) {
+  //`$substract`单位为%
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100% - $substract;
+}
+%singleline-ellipsis {
+  @include singleline-ellipsis;
+}

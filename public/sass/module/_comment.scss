@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.comment-input, .comment-content{
+  width: 670px;
+  float: right;
+}
+.comment-wrap {
+  margin: 20px 0;
+  .comment-avatar {
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+  }
+}
+
+// 输入区域
+.comment-textarea-wrap {
+  .comment-input {
+	.textarea {
+	  width: 100%;
+	  height: 100px;
+	}
+	.btn-submit-wrap {
+	  margin-top: 10px;
+	  text-align: right;
+	}
+  }
+}
+
+// 评论列表信息
+.comment-list-wrap {
+  .item-header {
+	margin: 20px 0;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid $gray-lighter;
+	ul {
+	  width: 680px;
+	  float: left;
+	  li {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		a {
+		  width: 50px;
+		  text-align: center;
+		  display: inline-block;
+		}
+		&.active a {
+		  position: relative;
+		  top: -2px;
+		  border-bottom: 2px solid $brand-warning;
+		  color: $brand-warning;
+		}
+	  }
+	}
+	.comment-count {
+	  width: 100px;
+	  float: right;
+	  display: inline-block;
+	  text-align: right;
+	  color: $gray;
+	  em {
+		font-style: normal;
+		padding: 0 5px;
+	  }
+	}
+  }
+  .item-info {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted $gray-lighter;
+	@include clearfix();
+	.comment-content {
+	  time {
+		color: $gray;
+		margin-left: 10px;
+	  }
+	  p {
+		color: #787878;
+	  }
+	}
+	.btn-report {
+	  float: right;
+	  color: $gray;
+	  visibility: hidden;
+	  &:hover {
+		i {
+		  color: $brand-danger;
+		}
+	  }
+	}
+	&:hover {
+	  .btn-report {
+		visibility: inherit;
+	  }
+	}
+	.comment-action {
+	  width: 100%;
+	  text-align: right;
+	  a {
+		color: $gray;
+		padding: 0 5px;
+		&:hover {
+		  color: $brand-warning;
+		}
+	  }
+	}
+  }
+  // 加载更多
+  .item-footer {
+	margin-top: 20px;
+  }
+}
+
+.btn-loading {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: $gray-lighter;
+  color: $gray;
+  display: block;
+  text-align: center;
+}
+
+// 回复按钮展开折叠
+.reply-wrap {
+  background-color: $gray-lighter;
+  border: 1px solid #ddd;
+  padding: 5px 20px 20px;
+  .reply-title {
+	font-weight: normal;
+  }
+  .reply-operate {
+	width: 100%;
+	.textarea {
+	  width: 100%;
+	}
+  }
+}
+
+// 发表说说
+.send-mood {
+  .comment-input {
+	width: 780px;
+  }
+}

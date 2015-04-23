@@ -1,0 +1,66 @@
+<% include ../header.ejs %>
+<!-- 播放器 开始 -->
+<section class="v-player-wrap">
+    <div class="container">
+        <div class="player-box"></div>
+    </div>
+</section>
+<!-- 播放器 结束 -->
+
+<section class="container">
+    <div class="row">
+        <!-- 左模块 开始-->
+        <div class="col-md-8 block-l">
+            <!-- 视频信息 开始 -->
+            <div class="v-info-wrap">
+                <h2 class="v-title">看不见的路，看得见的人生</h2>
+                <ul class="v-par list-unstyled clearfix">
+                    <li><a href="" target="_blank">后期效果</a> <a href="" target="_blank">剪辑</a></li>
+                    <li><span class="label-name">发布于：</span>2015-4-17</li>
+                    <li><span class="label-name">观看次数：</span>45678</li>
+                </ul>
+                <p>他曾是全国最早的盲人按摩连锁店老板也曾是最先为盲人创办电脑学校的老师而今他是盲人移动手机应用开发公司CEO。他看不到光亮却让8万盲人的生活充满色彩。他是曹军一个通过百度开放平台实现梦想的普通开发者。</p>
+                <footer class="row">
+                    <div class="col-md-6 label-text"><span class="label-name">标签：</span><a href="">盲人</a><a href="">曹军</a><a href="">实现梦想</a></div>
+                    <div class="col-md-6 text-right u-action">
+                        <a class="btn btn-warning" href="">喜欢 456</a>
+                        <a class="btn btn-warning" href="">收藏</a>
+                        <a class="btn btn-warning" href="">分享到</a>
+                    </div>
+                </footer>
+            </div>
+            <!-- 视频信息 开始 -->
+
+            <!-- 评论 开始 -->
+            <div class="comment-wrap">
+                <h3 class="mod-sub-title">评论（5）</h3>
+                <% include ../widget/comment_widget.ejs %>
+            </div>
+            <!-- 评论 结束 -->
+        </div>
+        <!-- 左模块 结束-->
+
+        <!-- 右模块 开始-->
+        <aside class="col-md-4 block-r">
+            <div class="u-info-wrap">
+                <h3 class="mod-sub-title">作品发布者</h3>
+                <% include ../widget/author-sidebar_widget.ejs %>
+                <div class="v-duty"><span class="label-name">片中职务：</span> <span>导演</span><span>摄像</span><span>化妆</span></div>
+            </div>
+
+            <div class="works-wrap v-rel-wrap">
+                <h3 class="mod-sub-title">相关作品</h3>
+                <% for(i=1;i<=3;i++) { %>
+                <div class="works-box mt10 clearfix">
+                    <a class="img-rotate" href="" target="_blank">
+                        <figure><img class="img-responsive" src="/images/demo/case<%=i%>.jpg" alt=""/></figure>
+                        <div class="v-title"><span>微电影节第三单元作品《我是你爸爸》</span></div>
+                    </a>
+                </div>
+                <% } %>
+            </div>
+        </aside>
+        <!-- 右模块 结束-->
+    </div>
+</section>
+<% include ../footer.ejs %>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+// 颜色
+.gray{
+  color: $gray;
+}
+.brand-danger{
+  color: $brand-danger;
+}
+.brand-warning{
+  color: $brand-warning;
+}
+.brand-success{
+  color: $brand-success;
+}
+
+// 边距
+.mt10{
+  margin-top: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+
+
+// 页面子标题
+.p-sub-title {
+  margin-bottom: 20px;
+  li {
+	float: left;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+	line-height: 2;
+	&.cur {
+	  border-bottom: 2px solid $brand-warning;
+	  a {
+		color: $brand-warning;
+	  }
+	}
+  }
+}
+
+// 内页模块标题
+.mod-sub-title {
+  font-size: 20px;
+}
+
+// tab导航
+.tab-nav{
+  padding-bottom: 15px;
+  border-bottom: 1px solid $gray-lighter;
+  li{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	font-size: 18px;
+	&.active a{
+	  color: $brand-warning;
+	}
+  }
+}
+
+// 标签
+.label-text{
+  a{
+	margin-right: 15px;
+  }
+}
+.label-name {
+  color: $gray-light;
+}
+
+
+%solid-line{
+  &:nth-child(2){
+	border-top: 1px solid $gray-lighter;
+  }
+  border-bottom: 1px solid $gray-lighter;
+}
+
+// line
+.divide {
+  padding: 0 5px;
+  color: $gray-color;
+  font-style: normal;
+}
+
+// filter
+.filter-wrap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $gray-lighter;
+  .fil-pro {
+	width: 70px;
+	display: inline-block;
+	text-align: right;
+	color: $gray-light;
+  }
+  .fil-val {
+	position: relative;
+	top: -25px;
+	left: 70px;
+	a {
+	  display: inline-block;
+	  line-height: 2;
+	  padding: 0 10px;
+	  border-radius: 2px;
+	  &.cur {
+		background-color: $brand-warning;
+		color: #fff;
+	  }
+	}
+  }
+}

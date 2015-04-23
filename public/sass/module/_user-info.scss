@@ -1,0 +1,62 @@
+@charset "UTF-8";
+// 用户块信息
+%u-info {
+  .per-ava {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0 15px;
+  }
+  .per-box {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	.per-info {
+	  padding-right: 15px;
+	  height: 88px;
+	  overflow: hidden;
+	  h5 {
+		margin: 0 0 5px 0;
+		font-size: 16px;
+	  }
+	  p {
+		margin-bottom: 5px;
+		color: $gray-light;
+		span{
+		  margin-right: 15px;
+		}
+	  }
+	  small {
+		color: $gray-light;
+	  }
+	}
+	.att-info{
+	  color: $gray-light;
+	  .btn-link{
+		float: right;
+	  }
+	}
+  }
+}
+
+.block-map-item {
+  background-color: $gray-lighter;
+  margin-bottom: 15px;
+  // 块底部
+  .per-act {
+	border-top: 1px solid #ccc;
+	color: $gray-light;
+	.item {
+	  padding: 5px 0;
+	  border-right: 1px solid #ccc;
+	  text-align: center;
+	  &:last-child {
+		border-right: none;
+	  }
+	}
+	.btn-link {
+	  display: inline-block;
+	  width: 100%;
+	  line-height: 40px;
+	}
+  }
+}

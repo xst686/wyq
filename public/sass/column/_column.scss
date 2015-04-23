@@ -1,0 +1,141 @@
+@charset "UTF-8";
+// 热门专栏 列表
+.col-list-wrap{
+  .col-name{
+	position: relative;
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+	h4{
+	  line-height: 30px;
+	  font-size: 16px;
+	}
+	figure{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	}
+  }
+  .col-con{
+	padding: 15px;
+	background-color: $gray-lighter;
+	margin-bottom: 20px;
+	figure{
+	  float: left;
+	  width: 160px;
+	  height: 140px;
+	  padding-right: 20px;
+	  background-color: $gray-lighter;
+	}
+	p{
+	  color: $gray-light;
+	  border-bottom: 1px solid #ccc;
+	  padding-bottom: 10px;
+
+	}
+	li a{
+	  @include singleline-ellipsis(0);
+	  line-height: 1.8;
+	}
+  }
+}
+
+// 专栏文章内页
+.col-art-con{
+  .art-ele{
+	border-bottom: 1px solid $gray-lighter;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	li{
+	  display: inline-block;
+	  float: left;
+	  margin-right: 30px;
+	}
+  }
+  footer{
+	border-top: 1px solid $gray-lighter;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 15px;
+  }
+  .art-pre{
+	margin-bottom: 30px;
+	li{
+	  line-height: 2.2;
+	}
+  }
+}
+
+// 专栏介绍
+.col-intro{
+  position: relative;
+  background-color: $gray-lighter;
+  padding: 15px;
+  figure{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 100px;
+	height: 100px;
+  }
+  .intro-con{
+	position: relative;
+	margin-left: 120px;
+	.att-num{
+	  display: inline-block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  span{
+		color: $gray-light;
+		margin-right: 20px;
+	  }
+	}
+	p{
+	  color: $gray-light;
+	}
+  }
+}
+
+
+// 会员专栏模块
+.mem-column-wrap{
+  .col-box{
+	position: relative;
+	height: 110px;
+	overflow: hidden;
+	background-color: $gray-lighter;
+	margin-bottom: 30px;
+	padding: 15px;
+	.per-ava{
+	  float: left;
+	  width: 80px;
+	  height: 80px;
+	  margin-right: 15px;
+	}
+	.per-info{
+	  margin-right: 80px;
+	  h5{
+		font-size: 16px;
+		margin-top: 0;
+	  }
+	  p{
+		margin-bottom: 5px;
+		color: $gray-light;
+	  }
+	}
+	.btn-att{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  width: 80px;
+	  height: 110px;
+	  line-height: 110px;
+	  border-left: 1px solid #ccc;
+	  text-align: center;
+	  a{
+		display: block;
+	  }
+	}
+  }
+}

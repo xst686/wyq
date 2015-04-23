@@ -1,0 +1,50 @@
+<% include ../header.ejs %>
+<section class="container">
+    <h1 class="page-title">专栏推荐</h1>
+    <!-- 热门专栏 开始 -->
+    <div class="col-list-wrap">
+        <h3 class="mod-title">热门专栏</h3>
+        <div class="row">
+            <% for (i=1;i<=4;i++) { %>
+            <div class="col-sm-6">
+                <div class="col-name">
+                    <h4>专栏名称(1234 人关注)</h4>
+                    <figure><img class="img-circle" src="/images/demo/avatar<%=i%>.jpg" width="30" height="30" alt=""/> <a href="">我是剪辑师</a></figure>
+                </div>
+                <div class="col-con">
+                    <figure><a href="" target="_blank"><img class="img-responsive" src="/images/demo/avatar<%=i%>.jpg" alt=""/></a></figure>
+                    <p>飞天无敌剪辑师简介简介飞天无敌剪辑师简介简介简介简介简介简介简介简介</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">一部超低成本的影片如何制作完成且走如何制作完成且走</a></li>
+                        <li><a href="">一部超低成本的影片如何制作完成且走如何制作完成且走</a></li>
+                        <li><a href="">一部超低成本的影片如何制作完成且走如何制作完成且走</a></li>
+                    </ul>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <!-- 热门专栏 结束 -->
+
+    <!-- 最新创建 开始 -->
+    <div class="mem-column-wrap">
+        <h3 class="mod-title">最新创建</h3>
+        <div class="row">
+            <% for (i=1;i<=6;i++) { %>
+            <div class="col-sm-4">
+                <div class="col-box clearfix">
+                    <div class="per-ava"><a href="" target="_blank"><img class="img-responsive" src="/images/demo/avatar<%=i%>.jpg" alt=""/></a></div>
+                    <div class="per-info">
+                        <h5><a href="" target="_blank">专栏名称</a></h5>
+                        <p><span class="label-name">作者：</span><a href="" target="_blank">乌龟</a></p>
+                        <p class="att-info"><span>123人关注</span></p>
+                    </div>
+                    <div class="btn-att"><a href="">+加关注</a></div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <!-- 最新创建 结束 -->
+</section>
+<% include ../footer.ejs %>

@@ -1,0 +1,73 @@
+<div class="comment-inner mt20 clearfix">
+    <form action="">
+        <div class="comment-textarea-wrap clearfix">
+            <a class="comment-avatar" href="" target="_blank"><img class="img-circle" src="/images/demo/avatar1.jpg" width="60" height="60" alt="会员昵称" /></a>
+            <div class="comment-input">
+                <textarea class="textarea" onkeyup="checkLength(this);" name="" autocomplete="off"></textarea>
+                <div class="btn-submit-wrap">
+                    <span class="gray">你还可以输入<span id="sy" class="brand-danger">140</span>个字</span>
+                    <input type="submit" class="btn btn-warning" value="确定" />
+                </div>
+            </div>
+        </div>
+        <!-- /.comment-textarea-wrap -->
+    </form>
+    <div class="comment-list-wrap">
+        <div class="item-header">
+            <ul class="list-unstyled">
+                <li class="active"><a href="">最热</a></li>
+                <li><a href="">最新</a></li>
+            </ul>
+            <span class="comment-count">共<em>34</em>条评论</span>
+        </div>
+
+        <div class="item-info">
+            <a class="comment-avatar" href="" target="_blank"><img class="img-circle" src="/images/demo/avatar2.jpg" width="60" height="60" alt="会员昵称" /></a>
+            <div class="comment-content">
+                <div class="name">
+                    <a href="">狂奔的乌龟</a>
+                    <time>刚刚</time>
+                    <a class="btn-report" href=""><i class="fa fa-flag"></i>举报</a>
+                </div>
+                <p>其实很不错啊！</p>
+            </div>
+            <div class="comment-action">
+                <a class="btn-support" href=""><i class="fa fa-thumbs-o-up"></i>赞(10)</a>
+                <a class="btn-replay" onClick="" href="javascript:void(0);"><i class="fa fa-reply"></i>回复</a>
+            </div>
+        </div>
+        <div class="item-info">
+            <a class="comment-avatar" href="" target="_blank"><img class="img-circle" src="/images/demo/avatar1.jpg" width="60" height="60" alt="会员昵称" /></a>
+            <div class="comment-content">
+                <div class="name">
+                    <a href="">狂奔的乌龟</a>
+                    <time>刚刚</time>
+                    <a class="btn-report" href=""><i class="fa fa-flag"></i>举报</a>
+                </div>
+                <p>其实很不错啊！</p>
+            </div>
+            <div class="comment-action">
+                <a class="btn-support" href=""><i class="fa fa-thumbs-o-up"></i>赞(10)</a>
+                <a class="btn-replay" onClick="js_comment_reply_show()" href="javascript:void(0);"><i class="fa fa-reply"></i>回复点我哟</a>
+            </div>
+            <div class="reply-wrap clearfix" id="js_comment_reply_open" style="display:none;">
+                <div class="clearfix">
+                    <a onClick="js_comment_reply_hidden()" href="javascript:void(0);" class="closed" ></a>
+                    <h5 class="reply-title">发表回复(<span class="brand-danger">140</span>)</h5>
+                </div>
+                <div class="reply-operate mt10">
+                    <textarea class="textarea" name="" autocomplete="off"></textarea>
+                    <a class="btn btn-warning btn-sm pull-right" href="javascript:void(0)">快捷回复</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-footer">
+            <a class="btn-loading" href="">加载更多</a>
+            <!-- 点击加载中 -->
+            <!--<a class="btn-loading" href=""><i class="fa fa-spinner fa-spin"></i></a>-->
+        </div>
+    </div>
+    <!-- /.comment-list-wrap -->
+</div>
+<!-- /.comment-inner -->

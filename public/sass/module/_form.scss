@@ -1,0 +1,62 @@
+@charset "UTF-8";
+// 表单下拉
+.diy_select {
+  height: 36px;
+  width: 228px;
+  position: relative;
+  padding: 6px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+.diy_select_btn, .diy_select_txt {
+  float: left;
+  height: 100%;
+  line-height: 22px
+}
+.diy_select, .diy_select_list {
+  border: 1px solid #ccc;
+}
+.diy_select_txt {
+  width: 228px;
+}
+.diy_select_txt, .diy_select_list li {
+  width: 100%;
+  text-indent: 10px;
+  overflow: hidden
+}
+.diy_select_btn {
+  width: 36px;
+}
+.diy_select_list {
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  z-index: 88888;
+  border-top: none;
+  width: 228px;
+  display: none;
+  background-color: #fff;
+  li {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	cursor: default;
+	_background: #fff;
+	&.focus {
+	  background: $brand-warning;
+	  color: #fff;
+	}
+  }
+}
+
+
+// 发布作品
+.pub-wrap{
+  em{
+	color: $brand-danger;
+	font-style: normal;
+  }
+  .btn{
+	min-width: 100px;
+  }
+}

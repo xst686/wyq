@@ -1,0 +1,33 @@
+@charset "UTF-8";
+// 文章列表
+.art-list-wrap{
+  @extend .clearfix;
+  @extend %solid-line;
+  position: relative;
+  padding: 10px 0 20px 0;
+  .art-info{
+	float: left;
+	margin-right: 260px;
+	.item{
+	  color: $gray-light;
+	  margin-bottom: 10px;
+	  span{
+		margin-right: 30px;
+	  }
+	}
+	p{
+	  color: $gray;
+	  line-height: 1.8;
+	}
+  }
+  figure{
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 220px;
+	margin-left: 20px;
+  }
+  .unimg{
+	margin-right: 0;
+  }
+}

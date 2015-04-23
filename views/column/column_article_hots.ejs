@@ -1,0 +1,23 @@
+<% include ../header.ejs %>
+<section class="container">
+    <div class="row">
+        <!-- 左模块 开始-->
+        <div class="col-md-8 block-l">
+            <h1 class="page-title">热门文章</h1>
+            <% include ../widget/article-list_widget.ejs %>
+        </div>
+        <!-- 左模块 结束-->
+
+        <!-- 右模块 开始-->
+        <aside class="col-md-4 block-r">
+            <!-- 热门专栏 开始 -->
+            <div class="u-info-wrap">
+                <h3 class="mod-sub-title">热门专栏</h3>
+                <% include ../widget/mem-item_widget.ejs %>
+            </div>
+            <!-- 热门专栏 结束 -->
+        </aside>
+        <!-- 右模块 结束-->
+    </div>
+</section>
+<% include ../footer.ejs %>

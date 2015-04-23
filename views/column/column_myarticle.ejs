@@ -1,0 +1,38 @@
+<% include ../header.ejs %>
+<section class="container">
+    <div class="row">
+        <!-- 左模块 开始-->
+        <div class="col-md-8 block-l">
+            <h1 class="page-title">我的专栏</h1>
+            <ul class="list-unstyled tab-nav clearfix">
+                <li class="active"><a href="">我发表的文章</a></li>
+                <li><a href="">我收藏的文章</a></li>
+                <li><a href="">我关注的专栏</a></li>
+                <li><a href="">我创建的专栏</a></li>
+            </ul>
+            <% for (i=1;i<=2;i++) { %>
+            <article class="art-list-wrap">
+                <div class="art-info">
+                    <h3><a href="" target="_blank">一部超低成本的影片如何制作完成且走向世界</a></h3>
+                    <div class="item"><span><a href="" target="_blank">小熊猫</a></span><span>今天8:33</span><span>专栏：<a href="" target="_blank">专栏名称</a></span><span>563 阅读</span></div>
+                    <p>第一次遇见，便被你所吸引，你的宇宙，让我不能自已。 不知从什么时候开始，我的世界，有了一份属于你的位置。 虽然你还不够好，缺点很多，但你的努力， 相信我，我能体会。 一年多了，还记得我们出现时被反对第一次...</p>
+                </div>
+                <figure><a href="" target="_blank"><img class="img-responsive" src="/images/lazy_article.png" alt=""/></a></figure>
+            </article>
+            <% } %>
+        </div>
+        <!-- 左模块 结束-->
+
+        <!-- 右模块 开始-->
+        <aside class="col-md-4 block-r">
+            <!-- 热门专栏 开始 -->
+            <div class="u-info-wrap">
+                <h3 class="mod-sub-title">热门专栏</h3>
+                <% include ../widget/mem-item_widget.ejs %>
+            </div>
+            <!-- 热门专栏 结束 -->
+        </aside>
+        <!-- 右模块 结束-->
+    </div>
+</section>
+<% include ../footer.ejs %>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.header-wrap{
+  background-color: $gray-darker;
+  height: 76px;
+  line-height: 76px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid $brand-warning;
+  .logo-wrap{
+	float: left;
+	font-size: 36px;
+	.logo{
+	  color: $brand-warning;
+	}
+  }
+  .nav{
+	float: left;
+	li{
+	  float: left;
+	  display: inline-block;
+	  font-size: 18px;
+	  a{
+		display: inline-block;
+		line-height: 76px;
+		padding: 0 10px;
+		color: #bababa;
+		&:hover{
+		  color: $brand-warning;
+		}
+	  }
+	}
+  }
+  .mem-login{
+	float: right;
+	.btn-login, .btn-reg{
+	  color: $brand-warning;
+	  font-size: 12px;
+	  font-family: "arial narrow", helvetica, sans-serif;
+	}
+	.btn-reg{
+	  background-color: $brand-warning;
+	  color: #fff;
+	  padding: 5px 15px;
+	  border-radius: 10px;
+	  margin-right: 10px;
+	}
+  }
+}

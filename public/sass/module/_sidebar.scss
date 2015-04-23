@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// 文章列表 热门文章
+.art-list-wrap{
+  article{
+	@extend %solid-line;
+	padding: 10px 0;
+	h4{
+	  @extend %singleline-ellipsis;
+	  font-size: 16px;
+	}
+	time{
+	  color: $gray-light;
+	}
+  }
+}
